@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+# Practico 7
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Ejercicio 0: Preparar el entorno
+En este ejercicio se preparará todo lo necesario para realizar la evaluación de forma adecuada.
 
-## Available Scripts
+1. Forkear el repositorio de la evaluación a su cuenta de GitHub.
+2. Clonar el repositorio en la computadora en la que se realice la evaluación.
+3. Crear una nueva rama denominada resolución_[apellido], dónde [apellido] es su apellido.
+4. Realizar la resolución de los ejercicios siguientes en la rama recién creada.
 
-In the project directory, you can run:
+### Ejercicio 1: Lista desplegable y modularización
 
-### `npm start`
+En este ejercicio se deberá crear una lista de selección e informar al usuario la un dato específico sobre la selección realizada. Esto se realizará en el archivo Ejercicio1.jsx.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**Parte 1**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Crear una lista desplegable con 3 productos:
+   * Set de cables (Precio: $10)
+   * Batería (Precio: $50)
+   * Óptica (Precio: $100)
+  (Tener en cuenta que posteriormente se mostrará el precio del producto seleccionado)
+2. Crear un estado en el que se almacenará la selección de la lista.
+3. Implementar una función que guarde el valor seleccionado en el estado creado en el punto anterior.
+4. Mostrar un mensaje que le indique al usuario El precio del producto seleccionado actualmente.
 
-### `npm test`
+**Parte 2**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Modularizar el ejercicio anterior en una componente denominada "ListaConDescuento".
+2. Esta componente recibirá un valor a través de sus propiedades. Este valor será la cantidad de descuento que se le aplicará a los diferentes artículo (valor entre 0 y 1).
+3. En lugar de mostrar el precio tottal del producto (como en la parte 1), se deberá mostrar el precio con descuento.
 
-### `npm run build`
+### Ejercicio 2: Formulario
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+En este ejercicio se deberá implementar un formulario que pida dos datos al usuario.
+El formulario se utilizará para ingresar un producto y su precio.
+Posteriormente se mostrarán diferentes mensajes en base a la información brindada.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. crear un formulario con 2 inputs y un boton se envío. Uno de los inputs deberá ser para texto y el otro para números.
+2. Crear un estado donde se almacene el contenido de los inputs. Debe ser un único estado.
+3. Crear y utilizar una única función que actualice el estado cuando los inputs son modificados. Mostrar en pantalla el producto y su precio. Por ejemplo, si se ingresan los datos "manzana" y 10, se debe mostrar: "manzana cuesta 10 pesos"
+4. Al presionar el botón de envío del formulario, se debe mostrar un mensaje que indique si el precio del producto es barato o caro. Si el producto cuesta más de $50 es caro, mientras que si cuesta $50 o menos es barato. Por ejemplo, para los datos del ejemplo anterior, se debe mostrar "El producto ingresado es barato" al enviar el formulario.
