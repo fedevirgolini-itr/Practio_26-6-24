@@ -1,12 +1,12 @@
 # Practico 7
 
 ### Ejercicio 0: Preparar el entorno
-En este ejercicio se preparará todo lo necesario para realizar la evaluación de forma adecuada.
+En este ejercicio se preparará todo lo necesario para realizar el práctico de forma adecuada.
 
-1. Forkear el repositorio de la evaluación a su cuenta de GitHub.
-2. Clonar el repositorio en la computadora en la que se realice la evaluación.
-3. Crear una nueva rama denominada resolución_[apellido], dónde [apellido] es su apellido.
-4. Realizar la resolución de los ejercicios siguientes en la rama recién creada.
+1. Forkear el repositorio del práctico a su cuenta de GitHub.
+2. Clonar el repositorio en la computadora en la que se realice el práctico.
+3. Crear una nueva rama donde se desarrollará del práctico.
+4. Realizar la implementación de los ejercicios siguientes en la rama recién creada.
 
 ### Ejercicio 1: Lista desplegable y modularización
 
